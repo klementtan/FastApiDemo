@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+jinja2
+sqlalchemy
+aiofiles
+python-multipart
+pyjwt
+passlib[bcrypt]
+pdbpp 
+async-exit-stack 
+async-generator
+pytest
+wheel
+setuptools
+requests
+-e .
