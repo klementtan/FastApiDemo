@@ -4,7 +4,11 @@ from sqlalchemy.orm import sessionmaker
 
 from ..database import Base
 from main import app, get_db
-
+import os
+try:
+  os.remove("test.db")
+except:
+  print("Database cleared")
 SQLALCHEMY_DATABASE_URL = "sqlite:///./test.db"
 
 engine = create_engine(
